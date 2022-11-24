@@ -59,7 +59,7 @@
                 })
         }
 
-        function searchAttack() {
+        function searchAttackGT() {
             let TestDataClass = ncmb.DataStore(db);
             let input = parseInt($("#attack").val());
             TestDataClass.greaterThanOrEqualTo("attack", input).fetchAll()
@@ -107,7 +107,7 @@
         <button class="btn" onclick="searchLevelLT()">Level &lt</button>
         <button class="btn" onclick="searchLevel()">Level</button>
         <button class="btn" onclick="searchLevelGT()">Level &gt</button><br>
-        <button class="btn" onclick="searchAttack()">AttackGT</button>
+        <button class="btn" onclick="searchAttackGT()">AttackGT</button>
     </div>
 
     <div id="message">message area</div>
